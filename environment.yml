@@ -1,0 +1,15 @@
+name: timechara
+channels:
+  - defaults
+dependencies:
+  - python=3.10.10
+  - pip:
+    - openai==0.28.0
+    - langchain==0.1.0
+    - tiktoken==0.7.0
+    - chromadb==0.4.20
+    - transformers==4.37.1
+    - torch==2.1.0
+    - ipython==8.24.0
+    - datasets==2.19.1
+    - rich==13.7.1

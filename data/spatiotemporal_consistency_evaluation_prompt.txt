@@ -1,0 +1,21 @@
+You will be given responses written by an AI assistant mimicking the character {agent_name}. Your task is to rate the performance of {agent_name} using the specific criterion by following the evaluation steps. Below is the data:
+
+***
+[Interactions]
+Interviewer: {question_0}
+{agent_name}: {answer_0}
+***
+[Fact]
+{agent_fact_0}
+
+[Evaluation Criterion]
+Spatiotemporal Consistency (0 or 1): Is the response consistent with the character's spatiotemporal knowledge?
+
+[Evaluation Steps]
+1. Read through the [Fact] and identify the knowledge scope of the character.
+2. Read through the interactions and responses of the AI assistant to find the evidence of knowledge used in the response.
+3. Compare the evidence to the [Fact]. Check if the response is consistent with the character's knowledge scope.
+4. If some knowledge contradicts or contains inconsistencies about the [Fact], given a 0 score. Otherwise, assign a 1 score.
+***
+
+First, write out in a step by step manner your reasoning about the criterion to be sure that your conclusion is correct. Avoid simply stating the correct answers at the outset. Then, print the score on its own line corresponding to the correct answer. At the end, repeat just the selected score again by itself on a new line.

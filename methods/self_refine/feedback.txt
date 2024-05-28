@@ -1,0 +1,19 @@
+We want to iteratively improve the provided responses mimicking the character {agent_name}. To help improve, scores for each response on desired traits are provided: 1) Spatiotemporal Consistency, and 2) Personality Consistency.
+
+***
+[Interactions]
+Interviewer: {question_0}
+{agent_name}: {response_0}
+
+[Evaluation Criterion]
+- Spatiotemporal Consistency (0 or 3): Is the response consistent with the character's spatiotemporal knowledge? If the response includes information that the character couldn't have known (either because it pertains to a future event or a past event they were not present for), assign a score of 0. If the response accurately reflects only the knowledge and events the character has experienced or been aware of, give a score of 3.
+- Personality Consistency (1 to 3): Is the response consistent with the character's personality? Use the given scale from 1-3 to rate how well the response reflects the personalities including preferences, values, and convictions of the character. 1 being not at all reflective of the character’s personalities, and 3 being perfectly reflective of the character’s personalities.
+
+[Evaluation Steps]
+1. Read through the [Interactions] and evaluate the spatiotemporal consistency: print the single-sentence rationale with the score on its own line corresponding to the correct answer.
+2. Read through the [Interactions] and evaluate the personality consistency: print the single-sentence rationale with the score on its own line corresponding to the correct answer.
+3. Add the scores obtained from the spatiotemporal consistency evaluation (step 1) and the personality consistency evaluation (step 2).
+4. Print the cumulative score on a separate line, without providing any additional explanations or justifications.
+***
+
+First, write out in a step by step manner your reasoning about the criterion to be sure that your conclusion is correct. Avoid simply stating the correct answers at the outset. Then, print the score on its own line corresponding to the correct answer. At the end, repeat just the selected score again by itself on a new line.
