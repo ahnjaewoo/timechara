@@ -17,7 +17,7 @@ Please cite our work if you found the resources in this repository useful:
 ```
 For a brief summary of our paper, please see this [webpage]().
 
-## 😳TimeChara
+## TimeChara
 
 You can load TimeChara from the [HuggingFace hub](https://huggingface.co/datasets/ahnpersie/timechara) as the following:
 ```python
