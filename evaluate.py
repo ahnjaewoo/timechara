@@ -30,7 +30,7 @@ def print_spatiotemporal_scores(dataset, outputs):
             spatiotemporal_score[data_type].append(output['temporal_score'] * output['spatial_score'])
         else:
             raise ValueError
-        
+
     combined_scores = []
     for value in spatiotemporal_score.values():
         combined_scores.extend(value)
@@ -50,7 +50,7 @@ def print_personality_scores(dataset, outputs):
         output = outputs[data_idx]
         assert output['personality_score'] != ''
         combined_scores.append(output['personality_score'])
-    
+
     print(f'\n*** Personality Scores ***\n')
     print(f'\nTotal (max 7.0): {sum(combined_scores)}/{len(combined_scores)} (={round(sum(combined_scores)/len(combined_scores),5)})')
 
@@ -101,7 +101,7 @@ def main():
 
     personality = dict.fromkeys(character_dict, '')
     for k,v in character_dict.items():
-        with open(f'data/personality/{v}_personality.txt', 'r') as fp:
+        with open(f'data/personality/{v}_personality.txt', 'r', encoding='utf-8') as fp:
             personality[k] = fp.read()
 
     with open('data/spatiotemporal_consistency_evaluation_prompt.txt', 'r') as fp:
@@ -133,7 +133,7 @@ def main():
         }
 
         day_character = preprocess_evaluation(series, character, character_period)
-        
+
         # spatiotemporal consistency
         if args.eval_mode in ['all', 'spatiotemporal']:
             data_type = example['data_type']
@@ -180,7 +180,7 @@ def main():
             else:
                 raise ValueError
 
-        # personality consistency    
+        # personality consistency
         if args.eval_mode in ['all', 'personality']:
             content_personality = evaluate_personality_consistency(
                 args.eval_model_name, personality_prompt_template, day_character, question, response, personality[character])

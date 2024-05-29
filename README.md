@@ -1,7 +1,7 @@
 # TimeChara
 
 This is the official repository of our ACL 2024 Findings paper:<br>
-<a href=""><b>TimeChara: Evaluating Point-in-Time Character Hallucination of Role-Playing Large Language Models</b></a>
+<a href="https://arxiv.org/abs/2405.18027"><b>TimeChara: Evaluating Point-in-Time Character Hallucination of Role-Playing Large Language Models</b></a>
 
 ![timechara example](assets/timechara.png)
 
@@ -15,7 +15,7 @@ Please cite our work if you found the resources in this repository useful:
     year=2024
 }
 ```
-For a brief summary of our paper, please see this [webpage]().
+For a brief summary of our paper, please see this [webpage](https://ahnjaewoo.github.io/timechara).
 
 ## TimeChara
 
