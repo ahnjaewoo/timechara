@@ -114,6 +114,16 @@ print(f"avg. AlignScore (# {len(scores)}) = {sum(scores)/len(scores)}")
 
 All generation & evaluation results will be saved under `outputs`.
 
+## 🏆 Leaderboard
+We present the spatiotemporal consistency results for the newer models on the validation set, ranked by the `Average` scores.
+| Model                               | Average [%] |  Future [%] | Past-absence [%] | Past-presence [%] | Past-only [%] |
+|-------------------------------------|:-----------:|:-----------:|:----------------:|:-----------------:|:-------------:|
+| o1-preview-2024-09-12 (zero-shot)   |     80.5    |     82.5    |       83.0       |        88.0       |      73.5     |
+| GPT-4o-2024-05-13 (zero-shot)       |     64.5    |     46.0    |       74.0       |        90.0       |      65.5     |
+| GPT-4-turbo-1106-preview (zero-shot)|     62.7    |     46.5    |       75.0       |        90.0       |      59.0     |
+| Mistral-7b-instruct-v0.2 (zero-shot)|     46.8    |     44.5    |       53.0       |        63.0       |      38.0     |
+| GPT-3.5-turbo-1106 (zero-shot)      |     44.2    |     29.0    |       33.0       |        91.0       |      41.5     |
+
 ## Have any questions?
 
 Please contact [Jaewoo Ahn](https://ahnjaewoo.github.io) at jaewoo.ahn at vision.snu.ac.kr
