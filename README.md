@@ -118,6 +118,7 @@ All generation & evaluation results will be saved under `outputs`.
 We present the spatiotemporal consistency results for the newer models on the validation set, ranked by the `Average` scores.
 | Model                               | Average [%] |  Future [%] | Past-absence [%] | Past-presence [%] | Past-only [%] |
 |-------------------------------------|:-----------:|:-----------:|:----------------:|:-----------------:|:-------------:|
+| o1-2024-12-17 (zero-shot)           |     81.8    |     80.5    |       81.0       |        93.0       |      78.0     |
 | o1-preview-2024-09-12 (zero-shot)   |     80.5    |     82.5    |       83.0       |        88.0       |      73.5     |
 | GPT-4o-2024-05-13 (zero-shot)       |     64.5    |     46.0    |       74.0       |        90.0       |      65.5     |
 | GPT-4-turbo-1106-preview (zero-shot)|     62.7    |     46.5    |       75.0       |        90.0       |      59.0     |
